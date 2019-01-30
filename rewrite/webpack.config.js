@@ -43,7 +43,8 @@ module.exports = {
         }),
         new PurgecssPlugin({
             paths: [
-                path.join(__dirname, 'src/index.html')
+                path.join(__dirname, 'src/index.html'),
+                path.join(__dirname, 'src/index.js')
             ],
             whitelistPatterns: () => [/tns/]
         }),
